@@ -28,7 +28,7 @@ class Program
 
         Console.WriteLine("Print git logging...");
 
-        foreach (var commit in repo.Commits)
+        foreach (var commit in repo.Commits.Reverse())
         {
             var notes = string.Join(nl, commit.Notes);
 
