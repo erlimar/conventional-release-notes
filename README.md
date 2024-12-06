@@ -1,2 +1,3 @@
-# conventional-release-notes
-Git release notes generator based on conventional commits
+# Conventional Release Notes
+
+Gerador de notas de lançamento à partir do histórico Git e baseado em Conventional Commits.
