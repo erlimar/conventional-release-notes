@@ -30,9 +30,9 @@ class Program
 
         foreach (var commit in repo.Commits.Reverse())
         {
-            var notes = string.Join(nl, commit.Notes);
+            var fullMessage = string.Join(nl, commit.Message);
 
-            Console.WriteLine($"{commit.Sha}: {commit.MessageShort}{nl}  - {(string.IsNullOrWhiteSpace(notes) ? "<null>" : notes)}");
+            Console.WriteLine($"{commit.Sha}: {commit.MessageShort}{nl}  - {(string.IsNullOrWhiteSpace(fullMessage) ? "<null>" : fullMessage)}");
         }
 
     }
